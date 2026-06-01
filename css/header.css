@@ -1,0 +1,115 @@
+* {
+  font-family: Space Grotesk, sans-serif;
+}
+
+body, button, input, textarea {
+  font-family: Space Grotesk, sans-serif;
+}
+
+.header-section {
+  background-color: white;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  right: 0;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 16px;
+  z-index: 200;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.377);
+  box-sizing: border-box;
+}
+
+.left-section {
+  margin-left: 64px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  margin-right: 64px;
+  gap: 4px;
+}
+
+@media (max-width: 1024px) {
+  .left-section {
+    margin-left: 20px;
+  }
+  .right-section {
+    margin-right: 10px;
+    gap: 2px;
+  }
+}
+
+.Website-Name {
+  background: linear-gradient(135deg, #f07142, #ad5cd6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.icon {
+  height: 20px;
+  width: 20px;
+  flex-shrink: 0;
+}
+
+.header-buttons {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: black;
+  height: 40px;
+  padding: 0 12px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.header-button-text {
+  margin-left: 4px;
+}
+
+.header-buttons:hover {
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+.header-buttons-clicked {
+  background-color: rgb(214, 149, 43);
+  color: white;
+}
+
+.header-buttons-clicked:hover {
+  background-color: rgb(214, 149, 43);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Mobile: hide text labels, show icons only */
+@media (max-width: 600px) {
+  .left-section {
+    margin-left: 12px;
+  }
+  .right-section {
+    margin-right: 8px;
+    gap: 0;
+  }
+  .header-button-text {
+    display: none;
+  }
+  .header-buttons {
+    padding: 0 10px;
+    height: 38px;
+  }
+}
